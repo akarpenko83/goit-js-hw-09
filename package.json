@@ -18,7 +18,8 @@
     "url": "https://akarpenko83.github.io/goit-js-hw-09/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "particlesjs": "^2.2.3"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

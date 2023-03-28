@@ -1,0 +1,46 @@
+html,
+body {
+    margin: 0;
+
+    padding: 0;
+}
+.background {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.wrap {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 90px; */
+}
+.timer {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.field {
+    width: 80px;
+    text-align: center;
+}
+.value {
+    font-size: 52px;
+    font-weight: 700;
+}
+.label {
+    display: block;
+    font-style: italic;
+}
