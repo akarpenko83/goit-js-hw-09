@@ -1,0 +1,2 @@
+html,body{margin:0;padding:0}.background{z-index:0;display:block;position:relative;top:0;left:0}.wrap{z-index:10;justify-content:center;display:flex;position:absolute;top:30%;left:50%;transform:translate(-50%,-50%)}.timer{z-index:15;justify-content:center;gap:20px;display:flex;position:absolute;top:40%;left:50%;transform:translate(-50%,-50%)}.field{width:80px;text-align:center}.value{font-size:52px;font-weight:700}.label{font-style:italic;display:block}
+/*# sourceMappingURL=02-timer.b3af2acb.css.map */
