@@ -1,5 +1,6 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 window.onload = function () {
   Particles.init({
     selector: '.background',
@@ -52,8 +53,9 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    if (selectedDates[0] < Date.now())  {
-      alert('Please choose a date in the future');
+    if (selectedDates[0] < Date.now()) {
+      Notify.failure('Please choose a date in the future');
+    
       return
     } 
     console.log(selectedDates[0]);
@@ -75,6 +77,7 @@ const timer = {
       refs.minsRef.textContent = minutes;
       refs.secRef.textContent = seconds;
       if (ms <= 0) {
+        Notify.success('Timer stopped');
         clearInterval(intervalId);
         resetInterface();
       }
@@ -109,6 +112,7 @@ function convertMs(ms) {
 }
 
 function resetInterface() {
+
       refs.daysRef.textContent = '00';
       refs.hoursRef.textContent = '00';
       refs.minsRef.textContent = '00';
