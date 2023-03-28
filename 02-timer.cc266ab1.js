@@ -1,2 +1,0 @@
-!function(){window.onload=function(){Particles.init({selector:".background",sizeVariations:4,connectParticles:!0,minDistance:200,color:"#808080",responsive:[{breakpoint:768,options:{maxParticles:100,color:"#D3D3D3",minDistance:70,connectParticles:!0}},{breakpoint:425,options:{maxParticles:100,connectParticles:!0}},{breakpoint:320,options:{maxParticles:0}}]})};({inputRef:document.querySelector("input"),btnRef:document.querySelector("button")}).inputRef.addEventListener("change",(function(){}))}();
-//# sourceMappingURL=02-timer.cc266ab1.js.map
