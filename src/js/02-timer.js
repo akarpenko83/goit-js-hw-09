@@ -41,7 +41,9 @@ const refs = {
   minsRef: document.querySelector('span[data-minutes]'),
   secRef: document.querySelector('span[data-seconds]'),
 }
-intervalId = null;
+
+let intervalId = null;
+
 refs.btnRef.disabled = true;
 
 const options = {
