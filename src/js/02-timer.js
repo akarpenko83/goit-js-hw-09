@@ -54,11 +54,11 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0] < Date.now()) {
-      Notify.failure('Please choose a date in the future');
-    
+      Notify.failure(`${selectedDates[0]}     Please choose a date in the future`);  
       return
     } 
-    console.log(selectedDates[0]);
+    Notify.success(`${selectedDates[0]}`);
+    // console.log(selectedDates[0]);
     refs.btnRef.disabled = false;
   },
 };
