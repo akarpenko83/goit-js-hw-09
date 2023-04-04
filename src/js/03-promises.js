@@ -48,6 +48,9 @@ function onFormSubmit(event) {
   const step = Number(formInput.step.value);
   const amount = Number(formInput.amount.value);
   
+  if (delay <= 0 || step <= 0 || amount <= 0) {
+    return Notify.failure("Please enter a valid value");
+  }
   generatePromisesRow(amount, delay, step, position)
  
 };
